@@ -1,8 +1,9 @@
+import Header from "./Header";
 function App() {
   return (
-    <div>
-      DevFest Kolkata 2022
-    </div>
+    <>
+      <Header />
+    </>
   );
 }
 

@@ -1,0 +1,26 @@
+import Logo from './images/logo.png'
+import HeaderArrow from './images/header-arrow.png'
+export default function Header() {
+  return (
+    <>
+    <div className="h-20 md:h-28 w-full bg-secondary flex md:justify-start justify-center absolute -z-50">
+        <div className="md:w-1/3 w-1/2 flex flex-row justify-center px-4">
+            <div className="h-1/2">
+            <img src={Logo} alt="DevFest 2022" className="h-full md:-mt-7 -mt-5 opacity-20"/>
+            <img src={Logo} alt="DevFest 2022" className="h-full"/>
+            <img src={Logo} alt="DevFest 2022" className="h-full opacity-20"/>
+            </div>
+        </div>
+        <div className='md:w-2/3 w-0 md:flex hidden headermenu items-center px-20'>
+          <img src={HeaderArrow} alt="arrow" className="h-16"/>
+          <div className="flex items-center justify-between w-full px-6 text-white text-2xl font-semibold font-sans">
+            <a href="/">Home</a>
+            <a href="/">Speakers</a>
+            <a href="/">Schedule</a>
+            <a href="/">Socials</a>
+          </div>
+        </div>
+    </div>
+    </>
+      );
+}

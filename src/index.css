@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.headermenu{
+    background:linear-gradient(90.01deg, #FBBC04 0.01%, rgba(251, 188, 4, 0.31) 118.89%);
+}
