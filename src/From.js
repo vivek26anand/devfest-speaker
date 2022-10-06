@@ -1,6 +1,9 @@
 import Illustration1 from './images/illustration (1).png';
 import Illustration2 from './images/illustration (2).png';
 import Illustration3 from './images/illustration (3).png';
+import Illustration4 from './images/illustration (4).png';
+import Illustration5 from './images/illustration (5).png';
+import Illustration6 from './images/illustration (6).png';
 const states = [ "Andhra Pradesh",
 "Arunachal Pradesh",
 "Assam",
@@ -48,7 +51,7 @@ export default function Form(){
               </div>
               <div>
                 <form className="flex md:flex-row flex-col">
-                    <div className='md:w-1/4'>
+                    <div className='md:w-1/4 flex flex-col justify-between'>
                     <label htmlFor="file-upload" className="text-sm font-medium text-tertiary flex flex-col items-center cursor-pointer">
                             Profile Photo
                         <div className="mt-1 sm:col-span-2 sm:mt-0 pt-2">
@@ -65,6 +68,9 @@ export default function Form(){
                         </div>
                         <input id="file-upload" name="file-upload" type="file" className="sr-only" accept="image/png, image/jpeg, image/jpg" />
                     </label>
+                    <img src={Illustration4} alt="illustration" className='md:w-60 w-0 -ml-6 -mt-4'/>
+                    <img src={Illustration6} alt="illustration" className='md:w-60 w-0 ml-6'/>
+                    <img src={Illustration1} alt="illustration" className='md:w-60 w-0 -ml-6'/>
                     </div>
                     
                     <div className='flex flex-col md:w-3/4'> 
@@ -172,7 +178,7 @@ export default function Form(){
                             <label htmlFor="designation" className="text-tertiary font-semibold font-sans mb-2">Designation</label>
                             <input type="text" name="designation" id="designation" className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary" required/>
                         </div>
-                        
+                        <img src={Illustration3} alt="illustration" className='md:w-80 w-0'/>
                        </div>
 
                        <div className='md:flex items-center justify-between'>
@@ -255,7 +261,7 @@ export default function Form(){
                                 <option>XL</option>
                             </select>
                         </div>
-                        
+                        <img src={Illustration5} alt="illustration" className='md:w-80 w-0'/>
                        </div>
                        <input type="submit" value="Submit" className="mt-5 w-full bg-primary text-white font-bold py-2 px-4 rounded-md cursor-pointer"/>
                     </div>
