@@ -141,7 +141,7 @@ export default function Form(){
                             <Input label='Years of experience' color='yellow' size='lg'/>
                         </div>
                         <div className='md:w-1/2 flex flex-col mb-4'>
-                            <Select label='Are you A GDE ?' color='yellow' size='lg'>
+                            <Select label='Are you a GDE ?' color='yellow' size='lg'>
                                <Option>No</Option>
                                <Option>Yes</Option>
                             </Select>
