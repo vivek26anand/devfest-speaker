@@ -4,6 +4,7 @@ import Illustration3 from './images/illustration (3).png';
 import Illustration4 from './images/illustration (4).png';
 import Illustration5 from './images/illustration (5).png';
 import Illustration6 from './images/illustration (6).png';
+import { Input } from '@material-tailwind/react';
 const states = [ "Andhra Pradesh",
 "Arunachal Pradesh",
 "Assam",
@@ -40,7 +41,9 @@ const states = [ "Andhra Pradesh",
 "Delhi",
 "Lakshadweep",
 "Puducherry"]
+
 export default function Form(){
+    
     return(
         <>
         <div className="w-full z-20 bg-secondary relative md:py-10 py-5">
@@ -79,18 +82,15 @@ export default function Form(){
                         <hr className='w-full h-4 mt-1 border-t-2'/>
                        </div>
                        {/* First Last and Middle Name */}
-                       <div className='md:flex items-center justify-between'>
-                        <div className='md:w-1/3 flex flex-col mb-4'>
-                            <label htmlFor="fname" className="text-tertiary font-semibold font-sans mb-2">First Name</label>
-                            <input type="text" name="fname" id="fname" className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary" required/>
+                       <div className='md:flex items-center justify-between gap-2'>
+                        <div className='md:w-[25%] flex flex-col mb-4'>
+                            <Input label='First Name' color='yellow' size='lg'/>
                         </div>
-                        <div className='md:w-1/3 flex flex-col mb-4'>
-                            <label htmlFor="mname" className="text-tertiary font-semibold font-sans mb-2">Middle Name</label>
-                            <input type="text" name="mname" id="mname" className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary"/>
+                        <div className='md:w-[25%] flex flex-col mb-4'>
+                            <Input label='Middle Name' color='yellow' size='lg'/>
                         </div>
-                        <div className='md:w-1/3 flex flex-col mb-4'>
-                            <label htmlFor="lname" className="text-tertiary font-semibold font-sans mb-2">Last Name</label>
-                            <input type="text" name="lname" id="lname" className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary" required/>
+                        <div className='md:w-[25%] flex flex-col mb-4'>
+                            <Input label='Last Name' color='yellow' size='lg'/>
                         </div>
                        </div>
                        {/* Email Conatct and Gender */}
