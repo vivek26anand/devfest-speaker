@@ -4,43 +4,8 @@ import Illustration3 from './images/illustration (3).png';
 import Illustration4 from './images/illustration (4).png';
 import Illustration5 from './images/illustration (5).png';
 import Illustration6 from './images/illustration (6).png';
-import { Input } from '@material-tailwind/react';
-const states = [ "Andhra Pradesh",
-"Arunachal Pradesh",
-"Assam",
-"Bihar",
-"Chhattisgarh",
-"Goa",
-"Gujarat",
-"Haryana",
-"Himachal Pradesh",
-"Jammu and Kashmir",
-"Jharkhand",
-"Karnataka",
-"Kerala",
-"Madhya Pradesh",
-"Maharashtra",
-"Manipur",
-"Meghalaya",
-"Mizoram",
-"Nagaland",
-"Odisha",
-"Punjab",
-"Rajasthan",
-"Sikkim",
-"Tamil Nadu",
-"Telangana",
-"Tripura",
-"Uttarakhand",
-"Uttar Pradesh",
-"West Bengal",
-"Andaman and Nicobar Islands",
-"Chandigarh",
-"Dadra and Nagar Haveli",
-"Daman and Diu",
-"Delhi",
-"Lakshadweep",
-"Puducherry"]
+import { Input, Select, Option, Textarea } from '@material-tailwind/react';
+
 
 export default function Form(){
     
@@ -82,54 +47,47 @@ export default function Form(){
                         <hr className='w-full h-4 mt-1 border-t-2'/>
                        </div>
                        {/* First Last and Middle Name */}
-                       <div className='md:flex items-center justify-between gap-2'>
-                        <div className='md:w-[25%] flex flex-col mb-4'>
+                       <div className='md:flex items-center justify-between gap-3'>
+                        <div className='md:w-1/3 flex flex-col mb-4'>
                             <Input label='First Name' color='yellow' size='lg'/>
                         </div>
-                        <div className='md:w-[25%] flex flex-col mb-4'>
+                        <div className='md:w-1/3 flex flex-col mb-4'>
                             <Input label='Middle Name' color='yellow' size='lg'/>
                         </div>
-                        <div className='md:w-[25%] flex flex-col mb-4'>
+                        <div className='md:w-1/3 flex flex-col mb-4'>
                             <Input label='Last Name' color='yellow' size='lg'/>
                         </div>
                        </div>
                        {/* Email Conatct and Gender */}
                       
-                       <div className='md:flex items-center justify-between'>
+                       <div className='md:flex items-center justify-between gap-3'>
                         <div className='md:w-1/3 flex flex-col mb-4'>
-                            <label htmlFor="email" className="text-tertiary font-semibold font-sans mb-2">Email</label>
-                            <input type="email" name="email" id="email" className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary" required/>
+                        <Input label='Email' color='yellow' size='lg'/>
                         </div>
                         <div className='md:w-1/3 flex flex-col mb-4'>
-                            <label htmlFor="phone" className="text-tertiary font-semibold font-sans mb-2">Contact No.</label>
-                            <input type="tel" name="phone" id="phone" className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary"/>
+                        <Input label='Phone no.' color='yellow' size='lg'/>
                         </div>
                         <div className='md:w-1/3 flex flex-col mb-4'>
-                            <label htmlFor="gender" className="text-tertiary font-semibold font-sans mb-2">Gender</label>
-                            <select className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary">
-                                <option></option>
-                                <option>Male</option>
-                                <option>Female</option>
-                                <option>Others</option>
-                            </select>
+                            <Select label="Gender" size="lg" color='yellow'>
+                                <Option></Option>
+                                <Option>Male</Option>
+                                <Option>Female</Option>
+                                <Option>Others</Option>
+                            </Select>
                         </div>
                        </div>
 
                        {/* City and State */}
                        
-                       <div className='md:flex items-center justify-between'>
+                       <div className='md:flex items-center justify-between gap-3'>
                         <div className='md:w-1/2 flex flex-col mb-4'>
-                            <label htmlFor="city" className="text-tertiary font-semibold font-sans mb-2">City</label>
-                            <input type="text" name="city" id="city" className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary" required/>
+                            <Input label='City' color='yellow' size='lg'/>
                         </div>
                         <div className='md:w-1/2 flex flex-col mb-4'>
-                            <label htmlFor="state" className="text-tertiary font-semibold font-sans mb-2">State</label>
-                            <select className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary">
-                               <option></option>
-                               {states.map((state)=>(
-                                <option key={state} value={state}>{state}</option>
-                               ))}
-                            </select>
+                            <Select label="State" size="lg" color="yellow">
+                               <Option></Option>
+                               <Option>Andhra Pradesh</Option><Option>Arunachal Pradesh</Option><Option>Assam</Option><Option>Bihar</Option><Option>Chhattisgarh</Option><Option>Goa</Option><Option>Gujarat</Option><Option>Haryana</Option><Option>Himachal Pradesh</Option><Option>Jammu and Kashmir</Option><Option>Jharkhand</Option><Option>Karnataka</Option><Option>Kerala</Option><Option>Madhya Pradesh</Option><Option>Maharashtra</Option><Option>Manipur</Option><Option>Meghalaya</Option><Option>Mizoram</Option><Option>Nagaland</Option><Option>Odisha</Option><Option>Punjab</Option><Option>Rajasthan</Option><Option>Sikkim</Option><Option>Tamil Nadu</Option><Option>Telangana</Option><Option>Tripura</Option><Option>Uttarakhand</Option><Option>Uttar Pradesh</Option><Option>West Bengal</Option><Option>Andaman and Nicobar Islands</Option><Option>Chandigarh</Option><Option>Dadra and Nagar Haveli</Option><Option>Daman and Diu</Option><Option>Delhi</Option><Option>Lakshadweep</Option><Option>Puducherry</Option>
+                            </Select>
                         </div>
                        </div>
                         <div className='text-lg text-tertiary font-bold'>
@@ -139,27 +97,23 @@ export default function Form(){
 
                         {/* Social Links */}
                        
-                       <div className='md:flex items-center justify-between'>
+                       <div className='md:flex items-center justify-between gap-3'>
 
                        <div className='md:w-1/2 flex flex-col mb-4'>
-                            <label htmlFor="twitter" className="text-tertiary font-semibold font-sans mb-2">Twitter</label>
-                            <input type="url" name="twitter" id="twitter" className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary" required/>
+                            <Input label='Twitter' color='yellow' size='lg'/>
                         </div>
                         <div className='md:w-1/2 flex flex-col mb-4'>
-                            <label htmlFor="github" className="text-tertiary font-semibold font-sans mb-2">Github</label>
-                            <input type="url" name="github" id="github" className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary" required/>
+                          <Input label='GitHub' color='yellow' size='lg'/>
                         </div>
                         
                        </div>
 
-                       <div className='md:flex items-center justify-between'>
+                       <div className='md:flex items-center justify-between gap-3'>
                         <div className='md:w-1/2 flex flex-col mb-4'>
-                            <label htmlFor="linkedin" className="text-tertiary font-semibold font-sans mb-2">LinkedIn</label>
-                            <input type="url" name="linkedin" id="linkedin" className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary" required/>
+                          <Input label='LinkedIn' color='yellow' size='lg'/>
                         </div>
                         <div className='md:w-1/2 flex flex-col mb-4'>
-                            <label htmlFor="website" className="text-tertiary font-semibold font-sans mb-2">Website</label>
-                            <input type="url" name="website" id="website" className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary" required/>
+                          <Input label='Website' color='yellow' size='lg'/>
                         </div>
                        </div>
 
@@ -170,46 +124,41 @@ export default function Form(){
 
                         {/* Professional */}
                        
-                       <div className='md:flex items-center justify-between'>
+                       <div className='md:flex items-center justify-between gap-3'>
 
                        <div className='md:w-1/2 flex flex-col mb-4'>
-                            <label htmlFor="organization" className="text-tertiary font-semibold font-sans mb-2">Organization</label>
-                            <input type="text" name="organization" id="organization" className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary" required/>
+                          <Input label='Organisation' color='yellow' size='lg'/>
                         </div>
                         <div className='md:w-1/2 flex flex-col mb-4'>
-                            <label htmlFor="designation" className="text-tertiary font-semibold font-sans mb-2">Designation</label>
-                            <input type="text" name="designation" id="designation" className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary" required/>
+                            <Input label='Designation' color='yellow' size='lg'/>
                         </div>
                         <img src={Illustration3} alt="illustration" className='absolute md:w-80 w-0 right-0 mr-10'/>
                        </div>
 
-                       <div className='md:flex items-center justify-between'>
+                       <div className='md:flex items-center justify-between gap-3'>
 
                        <div className='md:w-1/2 flex flex-col mb-4'>
-                            <label htmlFor="yearsofexperience" className="text-tertiary font-semibold font-sans mb-2">Years of experience</label>
-                            <input type="number" min={0} name="yearsofexperience" id="yearsofexperience" className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary" required/>
+                            <Input label='Years of experience' color='yellow' size='lg'/>
                         </div>
                         <div className='md:w-1/2 flex flex-col mb-4'>
-                            <label htmlFor="gde" className="text-tertiary font-semibold font-sans mb-2">Are you A GDE ?</label>
-                            <select className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary">
-                                <option>No</option>
-                                <option>Yes</option>
-                            </select>
+                            <Select label='Are you A GDE ?' color='yellow' size='lg'>
+                               <Option>No</Option>
+                               <Option>Yes</Option>
+                            </Select>
                         </div>
                         
                        </div>
                        <div className='md:w-1/2 flex flex-col mb-4'>
-                            <label htmlFor="techstack" className="text-tertiary font-semibold font-sans mb-2">Tech Stack</label>
-                            <select name="techstack" id="techstack" className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary">
-                                <option>MERN</option>
-                                <option>Flutter</option>
-                                <option>React Native</option>
-                                <option>Kotlin</option>
-                                <option>Firebase</option>
-                                <option>Python - Django</option>
-                                <option>LAMP</option>
-                                <option>Other</option>
-                            </select>
+                            <Select label='Tech Stack'>
+                               <Option>MERN</Option>
+                                <Option>Flutter</Option>
+                                <Option>React Native</Option>
+                                <Option>Kotlin</Option>
+                                <Option>Firebase</Option>
+                                <Option>Python - Django</Option>
+                                <Option>LAMP</Option>
+                                <Option>Other</Option>
+                            </Select>
                         </div>
                    
                         <div className='text-lg text-tertiary font-bold'>
@@ -219,22 +168,19 @@ export default function Form(){
 
                         {/* Session */}
                        
-                       <div className='md:flex items-center justify-between'>
+                       <div className='md:flex items-center justify-between gap-3'>
 
                        <div className='md:w-1/2 flex flex-col mb-4'>
-                            <label htmlFor="topic" className="text-tertiary font-semibold font-sans mb-2">Topic</label>
-                            <input type="text" name="topic" id="topic" className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary" required/>
+                            <Input label='Session Topic' color='yellow' size='lg'/>
                         </div>
                         <div className='md:w-1/2 flex flex-col mb-4'>
-                            <label htmlFor="duration" className="text-tertiary font-semibold font-sans mb-2">Duration</label>
-                            <input type="number" name="duration" id="duration" className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary" required/>
+                           <Input label='Duration' color='yellow' size='lg'/>
                         </div>
                         
                        </div>
 
                        <div className='flex flex-col mb-4'>
-                            <label htmlFor="BriefofTopic" className="text-tertiary font-semibold font-sans mb-2">Brief of Topic</label>
-                            <textarea name="BriefofTopic" id="BriefofTopic" className="w-full border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary" required/>
+                            <Textarea label='Session Description' color='yellow' size='lg'/>
                         </div>
                        
 
@@ -245,23 +191,21 @@ export default function Form(){
 
                         {/* Preferences */}
 
-                        <div className='md:flex items-center justify-between'>
+                        <div className='md:flex items-center justify-between gap-3'>
 
                        <div className='md:w-1/2 flex flex-col mb-4'>
-                            <label htmlFor="food" className="text-tertiary font-semibold font-sans mb-2">Food</label>
-                            <select className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary">
-                                <option>VEG</option>
-                                <option>NON VEG</option>
-                            </select>
+                            <Select label='Food' size='lg' color='yellow'>
+                                <Option>VEG</Option>
+                                <Option>NON VEG</Option>
+                            </Select>
                         </div>
                         <div className='md:w-1/2 flex flex-col mb-4'>
-                            <label htmlFor="tshirt" className="text-tertiary font-semibold font-sans mb-2">T Shirt</label>
-                            <select className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary">
-                                <option>S</option>
-                                <option>M</option>
-                                <option>L</option>
-                                <option>XL</option>
-                            </select>
+                            <Select label='Shirt Size' size='lg' color='yellow'>
+                                <Option>S</Option>
+                                <Option>M</Option>
+                                <Option>L</Option>
+                                <Option>XL</Option>
+                            </Select>
                         </div>
                         <img src={Illustration5} alt="illustration" className='md:w-80 w-0'/>
                        </div>
