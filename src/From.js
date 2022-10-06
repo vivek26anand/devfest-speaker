@@ -107,6 +107,7 @@ export default function Form(){
                         <div className='md:w-1/3 flex flex-col mb-4'>
                             <label htmlFor="gender" className="text-tertiary font-semibold font-sans mb-2">Gender</label>
                             <select className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary">
+                                <option></option>
                                 <option>Male</option>
                                 <option>Female</option>
                                 <option>Others</option>
@@ -124,6 +125,7 @@ export default function Form(){
                         <div className='md:w-1/2 flex flex-col mb-4'>
                             <label htmlFor="state" className="text-tertiary font-semibold font-sans mb-2">State</label>
                             <select className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary">
+                               <option></option>
                                {states.map((state)=>(
                                 <option key={state} value={state}>{state}</option>
                                ))}
@@ -178,7 +180,7 @@ export default function Form(){
                             <label htmlFor="designation" className="text-tertiary font-semibold font-sans mb-2">Designation</label>
                             <input type="text" name="designation" id="designation" className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary" required/>
                         </div>
-                        <img src={Illustration3} alt="illustration" className='md:w-80 w-0'/>
+                        <img src={Illustration3} alt="illustration" className='absolute md:w-80 w-0 right-0 mr-10'/>
                        </div>
 
                        <div className='md:flex items-center justify-between'>
@@ -188,19 +190,25 @@ export default function Form(){
                             <input type="number" min={0} name="yearsofexperience" id="yearsofexperience" className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary" required/>
                         </div>
                         <div className='md:w-1/2 flex flex-col mb-4'>
-                            <label htmlFor="gde" className="text-tertiary font-semibold font-sans mb-2">GDE</label>
+                            <label htmlFor="gde" className="text-tertiary font-semibold font-sans mb-2">Are you A GDE ?</label>
                             <select className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary">
-                                <option>Yes</option>
                                 <option>No</option>
+                                <option>Yes</option>
                             </select>
                         </div>
                         
                        </div>
                        <div className='md:w-1/2 flex flex-col mb-4'>
                             <label htmlFor="techstack" className="text-tertiary font-semibold font-sans mb-2">Tech Stack</label>
-                            <select className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary">
-                                <option>Yes</option>
-                                <option>No</option>
+                            <select name="techstack" id="techstack" className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary">
+                                <option>MERN</option>
+                                <option>Flutter</option>
+                                <option>React Native</option>
+                                <option>Kotlin</option>
+                                <option>Firebase</option>
+                                <option>Python - Django</option>
+                                <option>LAMP</option>
+                                <option>Other</option>
                             </select>
                         </div>
                    
@@ -228,13 +236,7 @@ export default function Form(){
                             <label htmlFor="BriefofTopic" className="text-tertiary font-semibold font-sans mb-2">Brief of Topic</label>
                             <textarea name="BriefofTopic" id="BriefofTopic" className="w-full border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary" required/>
                         </div>
-                       <div className='md:w-1/2 flex flex-col mb-4'>
-                            <label htmlFor="techstack" className="text-tertiary font-semibold font-sans mb-2">Tech Stack</label>
-                            <select className="md:w-5/6 border-2 border-tertiary rounded-md px-4 py-2 focus:border-primary focus:ring-primary">
-                                <option>Yes</option>
-                                <option>No</option>
-                            </select>
-                        </div>
+                       
 
                         <div className='text-lg text-tertiary font-bold'>
                         Preferences
