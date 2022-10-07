@@ -12,8 +12,8 @@ export default function Header() {
             </div>
         </div>
         <div className='md:w-2/3 w-0 md:flex hidden headermenu items-center px-20'>
-          <img src={HeaderArrow} alt="arrow" className="h-16"/>
-          <div className="flex items-center justify-between w-full px-6 text-white text-2xl font-semibold font-sans">
+          <img src={HeaderArrow} alt="arrow" className="lg:h-16 md:h-10"/>
+          <div className="flex items-center justify-between w-full px-6 text-white lg:text-2xl md:text-lg font-semibold font-sans gap-2">
             <a href="https://devfest.gdgkolkata.in/">Home</a>
             <a href="https://devfest.gdgkolkata.in/">Speakers</a>
             <a href="https://devfest.gdgkolkata.in/">Schedule</a>
