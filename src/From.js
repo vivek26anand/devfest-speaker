@@ -12,20 +12,19 @@ export default function Form(){
     return(
         <>
         <div className="w-full z-20 bg-secondary relative md:py-10 py-5">
-            <div className="md:mx-16 mx-3 bg-white rounded-2xl md:px-16 px-4 py-8 border-2 border-secondary">
-              <div className="flex justify-between">
+            <div className="md:mx-16 mx-3 bg-white rounded-2xl md:px-12 px-4 py-8 border-2 border-secondary">
+              <div className="flex justify-center items-center pb-8">
               <h1 className="md:text-5xl text-2xl font-semibold font-sans text-tertiary">Register as a <span className="text-primary">Speaker</span></h1>
-              <img src={Illustration2} alt="illustration" className='md:w-60 w-40'/>
               </div>
               <div>
-                <form className="flex md:flex-row flex-col">
-                    <div className='md:w-1/4 flex flex-col justify-between'>
-                    <img src={Illustration4} alt="illustration" className='md:w-52 w-0 -ml-6 -mt-4'/>
-                    <img src={Illustration6} alt="illustration" className='md:w-52 w-0 ml-6'/>
-                    <img src={Illustration1} alt="illustration" className='md:w-52 w-0 -ml-6'/>
-                    </div>
-                    
+                <form className="flex md:flex-row flex-col items-center justify-center">                    
                     <div className='flex flex-col md:w-3/4'> 
+                    <img src={Illustration4} alt="illustration" className='absolute md:w-56 w-0 left-0 ml-16 top-20'/>
+                    <img src={Illustration2} alt="illustration" className='absolute md:w-80 w-0 right-0 top-20 mr-16'/>
+                    <img src={Illustration6} alt="illustration" className='absolute md:w-60 w-0 left-0 ml-16 top-1/2'/>
+                    <img src={Illustration3} alt="illustration" className='absolute md:w-60 w-0 right-0 top-1/3 mr-16'/>
+                    <img src={Illustration1} alt="illustration" className='absolute md:w-80 w-0 left-0 bottom-10 ml-10'/>
+                    <img src={Illustration5} alt="illustration" className='absolute md:w-80 w-0 bottom-12 right-0 mr-12'/>
                        <div className='text-lg text-tertiary font-bold'>
                         Personal Information
                         <hr className='w-full h-4 mt-1 border-t-2'/>
@@ -121,7 +120,7 @@ export default function Form(){
                         <div className='md:w-1/2 flex flex-col mb-4'>
                             <Input label='Designation *' color='yellow' size='lg' required/>
                         </div>
-                        <img src={Illustration3} alt="illustration" className='absolute md:w-80 w-0 right-0 mr-16'/>
+                        
                        </div>
 
                        <div className='md:flex items-center justify-between gap-3'>
@@ -196,9 +195,9 @@ export default function Form(){
                                 <Option>XL</Option>
                             </Select>
                         </div>
-                        <img src={Illustration5} alt="illustration" className='md:w-80 w-0'/>
+                        
                        </div>
-                       <input type="submit" value="Submit" className="mt-5 w-full bg-primary text-white font-bold py-2 px-4 rounded-md cursor-pointer"/>
+                       <input type="submit" value="Submit" className="mt-5 w-40 bg-secondary text-primary self-center font-bold py-2 px-4 rounded-md cursor-pointer border-primary border-2"/>
                     </div>
                 </form>
               </div>
