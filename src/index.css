@@ -5,3 +5,7 @@
 .headermenu{
     background: url("./images/binary-love\ 2.png"), linear-gradient(90.01deg, #FBBC04 0.01%, rgba(251, 188, 4, 0.31) 118.89%);
 }
+.form-background{
+    background: url("./images/background.png"), #212025;
+    background-size: 300px auto;
+}

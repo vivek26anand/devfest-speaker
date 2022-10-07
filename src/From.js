@@ -11,7 +11,7 @@ export default function Form(){
     
     return(
         <>
-        <div className="w-full z-20 bg-secondary relative lg:py-10 py-5">
+        <div className="w-full z-20 bg-secondary relative lg:py-10 py-5 form-background">
             <div className="lg:mx-16 mx-3 bg-white rounded-2xl lg:px-12 md:px-8 px-4 py-8 border-2 border-secondary">
               <div className="flex justify-center items-center pb-8">
               <h1 className="lg:text-5xl text-3xl font-semibold font-sans text-tertiary">Register as a <span className="text-primary">Speaker</span></h1>
@@ -21,7 +21,7 @@ export default function Form(){
                     <div className='flex flex-col lg:w-3/4'> 
                     <img src={Illustration4} alt="illustration" className='absolute lg:w-56 md:w-48 w-0 left-0 ml-16 top-20'/>
                     <img src={Illustration2} alt="illustration" className='absolute lg:w-80 md:w-48 w-0 right-0 top-20 mr-16'/>
-                    <img src={Illustration6} alt="illustration" className='absolute lg:w-60 md:w-60 w-0 left-0 ml-8 top-1/2'/>
+                    <img src={Illustration6} alt="illustration" className='absolute lg:w-60 md:w-60 w-0 left-0 ml-10 top-1/2'/>
                     <img src={Illustration3} alt="illustration" className='absolute lg:w-60 md:w-40 w-0 right-0 top-1/3 mr-16'/>
                     <img src={Illustration1} alt="illustration" className='absolute lg:w-80 md:w-60 w-0 left-0 bottom-10 ml-10'/>
                     <img src={Illustration5} alt="illustration" className='absolute lg:w-80 md:w-60 w-0 bottom-12 right-0 mr-12'/>
