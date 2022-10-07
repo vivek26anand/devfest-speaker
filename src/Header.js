@@ -18,6 +18,7 @@ export default function Header() {
             <a href="https://devfest.gdgkolkata.in/">Speakers</a>
             <a href="https://devfest.gdgkolkata.in/">Schedule</a>
             <a href="https://devfest.gdgkolkata.in/">Socials</a>
+            <a href="/" className="opacity-0">Sign In</a>
           </div>
         </div>
     </div>
